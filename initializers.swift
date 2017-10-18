@@ -30,12 +30,14 @@ class Dog : Quadruped {
 
     convenience init(text: String){
         self.init(dogName: text)
+       // self.init()
         print(text)
     }
 
     func bark(){
         print("woof")
     }
+
     func printName(){
         print(self.name)
     }
