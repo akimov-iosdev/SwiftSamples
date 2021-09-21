@@ -10,8 +10,7 @@ import Foundation
 
 var competionHandlers: [() -> Void] = []
 
-func someFunctionWithEscapingClosure(competionHandler:
-    @escaping () -> Void){
+func someFunctionWithEscapingClosure(competionHandler:    @escaping () -> Void){
     competionHandlers.append(competionHandler)
 }
 
@@ -28,5 +27,4 @@ class SomeClass {
 }
 
 let instance = SomeClass()
-instance.doSomething()
-
+instance.doSomething()

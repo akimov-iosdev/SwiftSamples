@@ -2,8 +2,6 @@
 
 import UIKit
 
-var str = "Hello, playground"
-
 
 var myInt: Int? = nil
 
@@ -15,7 +13,6 @@ let convertUnpossibleString = Int(unpossibleString)
 
 type(of:convertUnpossibleString)
 
-
 var optionalVar = Optional("stringValue")
 optionalVar
 
@@ -25,26 +22,49 @@ type(of:optionalVar)
 
 
 var trollAge: Int? = 95
+//print(trollAge)
 trollAge = trollAge! + 10
 trollAge
 
-var type: String
+var type2: String
 let monsterOneType: String? = "Дракон"
-type = monsterOneType!
-type
+type2 = monsterOneType!
+type2
 
 let monsterTwoType: String! = nil//"Тролль"
-
 if monsterTwoType == nil {
-    
+    print("is nil")
 }
 else{
-    type = monsterTwoType
+    type2 = monsterTwoType
 }
-print(type)
+print(type2)
 
-type(of:monsterOneType)
-type(of:monsterTwoType)
+
+
+type(of: monsterOneType)
+type(of: monsterTwoType)
+//____________________________________________________________________________________________________
+var someType: String! = nil
+
+someType = monsterOneType
+//____________________________________________________________________________________________________
+let monsterThirdType: String? = nil
+//monsterThirdType!
+
+if let monsterType = monsterThirdType {
+    print(monsterType)
+}else{
+    //print(monsterThirdType!)
+}
+
+
+
+
+
+
+
+
 
 
 

@@ -98,7 +98,7 @@ iAmHappy.rawValue
 
 var myPlanet = Planet.init(rawValue: 3)
 var anotherPlanet = Planet.init(rawValue: 11)
-
+print(String(describing: anotherPlanet))
 
 var chess3 = chess2
 
